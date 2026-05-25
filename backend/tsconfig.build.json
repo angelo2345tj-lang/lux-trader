@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES2020",
+
     "module": "commonjs",
     "moduleResolution": "node",
 
-    "rootDir": "..",
-    "baseUrl": "..",
-    "outDir": "./dist",
+    "rootDir": ".",
+    "outDir": "dist",
 
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -17,16 +17,24 @@
     "resolveJsonModule": true,
 
     "strict": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+
+    "ignoreDeprecations": "6.0"
   },
 
   "include": [
-    "src/**/*",
-    "../services/**/*",
-    "../engines/**/*",
-    "../types/**/*",
-    "../utils/**/*",
-    "../constants.ts",
-    "../types.ts"
+    "backend/src/**/*",
+    "services/**/*",
+    "engines/**/*",
+    "types/**/*",
+    "utils/**/*",
+    "constants.ts",
+    "types.ts"
+  ],
+
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts"
   ]
 }
