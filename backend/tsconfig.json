@@ -1,24 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "rootDir": "..",
-    "baseUrl": "..",
-    "outDir": "./dist",
-    "strict": false,
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "ignoreDeprecations": "6.0"
-  },
-  "include": [
-    "src/**/*",
-    "../services/**/*",
-    "../engines/**/*",
-    "../types/**/*",
-    "../utils/**/*",
-    "../constants.ts",
-    "../types.ts"
-  ]
+    "allowSyntheticDefaultImports": true,
+
+    "strict": false,
+    "skipLibCheck": true
+  }
 }
