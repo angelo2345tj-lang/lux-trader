@@ -1,0 +1,30 @@
+{
+  "name": "lux-trader-fx",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n web,api -c blue,green \"vite\" \"npm run start:dev --prefix backend\"",
+    "dev:web": "vite",
+    "dev:api": "npm run start:dev --prefix backend",
+    "dev:all": "npm run dev",
+    "build": "vite build",
+    "build:api": "npm run build --prefix backend",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/genai": "^1.38.0",
+    "framer-motion": "^12.40.0",
+    "html2canvas": "^1.4.1",
+    "lucide-react": "^0.563.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.1.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
