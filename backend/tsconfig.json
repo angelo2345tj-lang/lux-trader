@@ -9,14 +9,16 @@
     "target": "ES2021",
     "sourceMap": true,
     "outDir": "./dist",
+    "rootDir": "./src",
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true,
+    "strict": false,
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "moduleResolution": "node"
+    "esModuleInterop": true,
+    "ignoreDeprecations": "6.0"
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
