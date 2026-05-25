@@ -23,7 +23,7 @@
   },
 
   "include": [
-    "backend/src/**/*",
+    "src/**/*",
     "services/**/*",
     "engines/**/*",
     "types/**/*",

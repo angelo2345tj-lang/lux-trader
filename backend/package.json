@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "private": true,
 
-  "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "start": "node dist/backend/src/main.js",
-    "start:dev": "tsx watch backend/src/main.ts",
-    "dev:api": "npm run start:dev",
-    "start:prod": "node dist/backend/src/main.js"
-  },
+"scripts": {
+  "build": "tsc -p tsconfig.build.json",
+  "start": "node dist/src/main.js",
+  "start:dev": "tsx watch src/main.ts",
+  "dev:api": "npm run start:dev",
+  "start:prod": "node dist/src/main.js"
+},
 
   "dependencies": {
     "@nestjs/common": "^11.0.0",
