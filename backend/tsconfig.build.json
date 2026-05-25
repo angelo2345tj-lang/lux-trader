@@ -6,7 +6,7 @@
     "moduleResolution": "node",
 
     "rootDir": ".",
-    "outDir": "backend/dist",
+    "outDir": "dist",
 
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -23,18 +23,12 @@
   },
 
   "include": [
-    "backend/src/**/*",
-    "services/**/*",
-    "engines/**/*",
-    "types/**/*",
-    "utils/**/*",
-    "constants.ts",
-    "types.ts"
+    "src/**/*"
   ],
 
   "exclude": [
     "node_modules",
-    "backend/dist",
+    "dist",
     "**/*.spec.ts"
   ]
 }

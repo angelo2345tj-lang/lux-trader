@@ -5,10 +5,10 @@
 
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "start": "node backend/dist/backend/src/main.js",
-    "start:dev": "tsx watch backend/src/main.ts",
+    "start": "node dist/src/main.js",
+    "start:dev": "tsx watch src/main.ts",
     "dev:api": "npm run start:dev",
-    "start:prod": "node backend/dist/backend/src/main.js"
+    "start:prod": "node dist/src/main.js"
   },
 
   "dependencies": {
