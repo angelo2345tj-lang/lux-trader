@@ -1,21 +1,15 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "ES2021",
-    "sourceMap": true,
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "..",
+    "baseUrl": "..",
     "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
-    "skipLibCheck": true,
     "strict": false,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
     "ignoreDeprecations": "6.0"
   },
   "include": [
@@ -23,10 +17,8 @@
     "../services/**/*",
     "../engines/**/*",
     "../types/**/*",
+    "../utils/**/*",
+    "../constants.ts",
     "../types.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
   ]
 }
