@@ -4,11 +4,11 @@
   "private": true,
 
 "scripts": {
-  "build": "tsc -p tsconfig.build.json",
-  "start": "node dist/src/main.js",
-  "start:dev": "tsx watch src/main.ts",
+  "build": "tsc -p backend/tsconfig.build.json",
+  "start": "node backend/dist/backend/src/main.js",
+  "start:dev": "tsx watch backend/src/main.ts",
   "dev:api": "npm run start:dev",
-  "start:prod": "node dist/src/main.js"
+  "start:prod": "node backend/dist/backend/src/main.js"
 },
 
   "dependencies": {

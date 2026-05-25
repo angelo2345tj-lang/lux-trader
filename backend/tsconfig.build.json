@@ -5,8 +5,8 @@
     "module": "commonjs",
     "moduleResolution": "node",
 
-    "rootDir": ".",
-    "outDir": "dist",
+    "rootDir": "..",
+    "outDir": "./dist",
 
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -24,12 +24,12 @@
 
   "include": [
     "src/**/*",
-    "services/**/*",
-    "engines/**/*",
-    "types/**/*",
-    "utils/**/*",
-    "constants.ts",
-    "types.ts"
+    "../services/**/*",
+    "../engines/**/*",
+    "../types/**/*",
+    "../utils/**/*",
+    "../constants.ts",
+    "../types.ts"
   ],
 
   "exclude": [
